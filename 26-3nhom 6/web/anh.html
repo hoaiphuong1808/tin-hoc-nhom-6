@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ảnh lớp 12A5</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* LƯỚI ẢNH */
+.photo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* KHUNG ẢNH */
+.photo-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+/* ẢNH */
+.photo-item img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:0.4s;
+    display:block;
+}
+
+/* LỚP PHỦ */
+.overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    opacity:0;
+    transition:0.4s;
+}
+
+/* CHỮ */
+.overlay span{
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+/* HOVER */
+.photo-item:hover img{
+    transform:scale(1.1);
+}
+
+.photo-item:hover .overlay{
+    opacity:1;
+}
+
+</style>
+</head>
+<body>
+
+<div class="action-bar">
+    <div class="logo">🌸 26/3</div>
+    <div class="menu">
+        <a href="index.html">Trang chủ</a>
+        <a href="anh.html" class="active">Ảnh</a>
+        <a href="tho.html">Nội dung</a>
+        <a href="lienhe.html">Video</a>
+    </div>
+</div>
+
+<div class="main">
+<div class="container">
+
+<div class="photo-grid">
+
+<div class="photo-item">
+<img src="picture/1.jpg">
+<div class="overlay"><span>Kỷ niệm 26/3</span></div>
+</div>
+
+<div class="photo-item">
+<img src="picture/2.jpg">
+<div class="overlay"><span>Khoảnh khắc vui vẻ</span></div>
+</div>
+
+<div class="photo-item">
+<img src="picture/3.jpg">
+<div class="overlay"><span>Tuổi trẻ 12A5</span></div>
+</div>
+
+<div class="photo-item">
+<img src="picture/4.jpg">
+<div class="overlay"><span>Cháy hết mình</span></div>
+</div>
+
+<div class="photo-item">
+<img src="picture/5.jpg">
+<div class="overlay"><span>Tinh thần đoàn kết</span></div>
+</div>
+
+<div class="photo-item">
+<img src="picture/6.jpg">
+<div class="overlay"><span>Kỷ niệm khó quên</span></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<footer class="footer-bar">
+12A5 - Kỷ niệm 26/3
+</footer>
+
+</body>
+</html>
